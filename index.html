@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thing's That I Need To DO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Thing's That I Need To DO</h1>
+
+    <div class="datetime">
+    <p id="time"></p>
+    <p id="date"></p> </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h3>Total Tasks</h3>
+        <p id="total-tasks">0</p>
+      </div>
+      <div class="stat-box">
+        <h3>Completed</h3>
+        <p id="completed-tasks">0</p>
+      </div>
+      <div class="stat-box">
+        <h3>Pending</h3>
+        <p id="pending-tasks">0</p>
+      </div>
+      <div class="stat-box">
+        <h3>Progress</h3>
+        <p id="progress">0%</p>
+      </div>
+    </div>
+
+    <!-- 🔹 Add Task Form -->
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a todo..." required>
+      <input type="date" id="todo-date" required>
+      <button type="submit" class="add-btn">+</button>
+    </form>
+
+    <!-- 🔹 Search & Filter -->
+    <div class="controls">
+      <input type="text" id="filter-input" placeholder="Search tasks...">
+      <button id="filter-btn">Filter</button>
+      <button id="delete-all" class="delete-all">Delete All</button>
+    </div>
+
+    <!-- 🔹 Task Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4" class="no-task">No tasks found</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+<!-- 🔹 Theme Switcher -->
+<div class="theme-switcher">
+    <label for="theme-select">🎨 Theme:</label>
+    <select id="theme-select">
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="synthwave">Synthwave</option>
+      <option value="aqua">Aqua</option>
+    </select>
+  </div>
+
+  <div class="cursor-runner">🏃‍♂️</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

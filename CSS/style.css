@@ -1,0 +1,392 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1e1e2f; /* dark background */
+  color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #2c2c3c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  background: #33334d;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.stat-box p {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.add-btn {
+  background: #e91e63;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.controls button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#filter-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.delete-all {
+  background: #f44336;
+  color: white;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+.no-task {
+  text-align: center;
+  color: #aaa;
+}
+
+button.delete {
+  background: red;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.complete {
+  background: #2196f3;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 🌙 Dark Theme (default) */
+.dark-theme {
+  --bg: #1e1e2f;
+  --container: #2c2c3c;
+  --text: #f0f0f0;
+  --primary: #e91e63;
+  --accent: #4caf50;
+  --danger: #f44336;
+  --info: #2196f3;
+}
+
+/* ☀️ Light Theme */
+.light-theme {
+  --bg: #f9f9f9;
+  --container: #ffffff;
+  --text: #333;
+  --primary: #007bff;
+  --accent: #28a745;
+  --danger: #dc3545;
+  --info: #17a2b8;
+}
+
+/* 🌌 Synthwave Theme */
+.synthwave-theme {
+  --bg: #2a2139;
+  --container: #3d2a5a;
+  --text: #f8f8f2;
+  --primary: #ff79c6;
+  --accent: #50fa7b;
+  --danger: #ff5555;
+  --info: #8be9fd;
+}
+
+/* 🌊 Aqua Theme */
+.aqua-theme {
+  --bg: #0f2027;
+  --container: #203a43;
+  --text: #e0f7fa;
+  --primary: #00bcd4;
+  --accent: #4dd0e1;
+  --danger: #e57373;
+  --info: #26c6da;
+}
+
+/* 🌙 Dark Theme (default) */
+.dark-theme {
+  --bg: #1e1e2f;
+  --container: #2c2c3c;
+  --text: #f0f0f0;
+  --primary: #e91e63;
+  --accent: #4caf50;
+  --danger: #f44336;
+  --info: #2196f3;
+}
+
+/* ☀️ Light Theme */
+.light-theme {
+  --bg: #f9f9f9;
+  --container: #ffffff;
+  --text: #333;
+  --primary: #007bff;
+  --accent: #28a745;
+  --danger: #dc3545;
+  --info: #17a2b8;
+}
+
+/* 🌌 Synthwave Theme */
+.synthwave-theme {
+  --bg: #2a2139;
+  --container: #3d2a5a;
+  --text: #f8f8f2;
+  --primary: #ff79c6;
+  --accent: #50fa7b;
+  --danger: #ff5555;
+  --info: #8be9fd;
+}
+
+/* 🌊 Aqua Theme */
+.aqua-theme {
+  --bg: #0f2027;
+  --container: #203a43;
+  --text: #e0f7fa;
+  --primary: #00bcd4;
+  --accent: #4dd0e1;
+  --danger: #e57373;
+  --info: #26c6da;
+}
+
+/* 🌙 Dark Theme (default) */
+.dark-theme {
+  --bg: #1e1e2f;
+  --container: #2c2c3c;
+  --text: #f0f0f0;
+  --primary: #e91e63;
+  --accent: #4caf50;
+  --danger: #f44336;
+  --info: #2196f3;
+}
+
+/* ☀️ Light Theme */
+.light-theme {
+  --bg: #f9f9f9;
+  --container: #ffffff;
+  --text: #333;
+  --primary: #007bff;
+  --accent: #28a745;
+  --danger: #dc3545;
+  --info: #17a2b8;
+}
+
+/* 🌌 Synthwave Theme */
+.synthwave-theme {
+  --bg: #2a2139;
+  --container: #3d2a5a;
+  --text: #f8f8f2;
+  --primary: #ff79c6;
+  --accent: #50fa7b;
+  --danger: #ff5555;
+  --info: #8be9fd;
+}
+
+/* 🌊 Aqua Theme */
+.aqua-theme {
+  --bg: #0f2027;
+  --container: #203a43;
+  --text: #e0f7fa;
+  --primary: #00bcd4;
+  --accent: #4dd0e1;
+  --danger: #e57373;
+  --info: #26c6da;
+}
+
+/* Apply theme variables */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+.container {
+  background: var(--container);
+}
+.add-btn {
+  background: var(--primary);
+}
+#filter-btn {
+  background: var(--accent);
+}
+.delete-all, .delete {
+  background: var(--danger);
+}
+.complete {
+  background: var(--info);
+}
+
+/* 🔹 Theme Switcher Styling */
+.theme-switcher {
+  position: fixed;         /* Stays in place */
+  bottom: 20px;            /* 20px above bottom */
+  left: 50%;               /* Move to center horizontally */
+  transform: translateX(-50%); /* Correct centering */
+  background: rgba(0,0,0,0.4);
+  padding: 8px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.theme-switcher label {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.theme-switcher select {
+  background: var(--container);
+  color: var(--text);
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+body {
+  cursor: none;
+}
+
+.cursor-runner {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  pointer-events: none; /* don’t block clicks */
+  z-index: 1000;
+  font-size: 24px;
+}
+
+.cursor-runner {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background: url('images/runner-sprite.png') left center;
+  animation: run 0.8s steps(8) infinite; /* 8 frames */
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes run {
+  100% {
+    background-position: -384px; /* 48px * 8 frames */
+  }
+}
+
+.cursor-runner {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 1000;
+  font-size: 28px;
+  animation: runAnim 0.4s infinite alternate; /* Running effect */
+}
+
+@keyframes runAnim {
+  0%   { transform: translateY(-2px) rotate(-10deg); }
+  50%  { transform: translateY(2px) rotate(10deg); }
+  100% { transform: translateY(-2px) rotate(-10deg); }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.datetime {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#time {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4dd0e1; /* warna biru cerah */
+  margin: 0;
+}
+
+#date {
+  font-size: 16px;
+  color: #bbb;
+  margin: 0;
+}
